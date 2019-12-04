@@ -1,13 +1,13 @@
 <?php
 
 	// データベースに接続
-	$link = mysql_connect('localhost', 'root', '');
+	$link = mysqli_connect('localhost', 'root', '');
 	if(!$link){
-		die('データベースに接続できません：' . mysql_error());
+		die('データベースに接続できません：' . mysqli_error());
 	}
 
 	// 	データベースを選択する
-	mysql_select_db('oneline_bbs', $link);
+	mysqli_select_db('oneline_bbs', $link);
 
 	$errors = array();
 
