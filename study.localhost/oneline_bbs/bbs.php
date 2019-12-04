@@ -1,3 +1,29 @@
+<?php
+
+	// データベースに接続
+	$link = mysql_connect('localhost', 'root', '');
+	if(!$link){
+		die('データベースに接続できません：' . mysql_error());
+	}
+
+	// 	データベースを選択する
+	mysql_select_db('oneline_bbs', $link);
+
+	$errors = array();
+
+	// POSTなら保存処理実行
+	if($_SERVER['REQUEST_METHOD'] === 'POST'){
+		// 名前が正しく入力されているかチェック
+
+
+		// ひとことが正しく入力されているかチェック
+
+
+		// エラーが無ければ保存
+
+	}
+
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xtml1/DTD/xhtml1-transitional.dtd">
 <html>
